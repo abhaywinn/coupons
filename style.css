@@ -1,4 +1,5 @@
-body, * {
+body,
+* {
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -186,15 +187,6 @@ body, * {
   padding: 20px;
 }
 
-.image-row img {
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-}
-
-.image-row:hover img {
-  transform: scaleX(1.04);
-}
-
 .image-container div {
   position: relative;
   padding-top: 4px;
@@ -204,7 +196,7 @@ body, * {
 .image-container img {
   width: 100%;
   height: auto;
-  max-width: 500px;
+  max-width: 100%;
 }
 
 .time-block {
@@ -318,5 +310,8 @@ body, * {
     top: 57px;
     left: 19px;
     max-width: 82px;
+  }
+  .image-row {
+    width: 100%; 
   }
 }
